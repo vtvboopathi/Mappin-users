@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react'
+import Session from './toggle-change'
+import "./style.css"
+import controlledInput from './forms/controlled-input'
+import ControlInput from './forms/controlled-input'
+import UserInput from './forms/user-input'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App = () => {
+
+  return(
+    <div className='root'>
+      <h1 className='h1'>User Mapping</h1>
+      {/* <ControlInput/> */}
+      <UserInput/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
